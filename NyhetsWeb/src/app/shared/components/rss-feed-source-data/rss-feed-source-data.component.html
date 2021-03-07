@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ model.Title }}</h5>
+    <div [innerHTML]="model.Description"></div>
+    <p>{{ model.LastBuildDate | amDateFormat: 'YYYY-MM-DD HH:mm' }}</p>
+    <p>{{ model.CopyRight }}</p>
+    <p>{{ model.ManagingEditor }}</p>
+    <p>{{ model.Language }}</p>
+    <div>
+      <img src="{{ model.ImageUrl }}"/>
+    </div>
+    <a href="{{ model.Link }}" target="_blank">{{ model.Link }}</a>
+  </div>
+</div>

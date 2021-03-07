@@ -1,0 +1,12 @@
+<nav>
+  <ul class="nav">
+    <li class="nav-item" *ngFor="let link of links">
+      <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="{{ link.href }}">{{ link.title }}</a>
+    </li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
+<footer>
+  Skapad av Johannes Klint
+</footer>
