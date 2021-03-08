@@ -12,19 +12,19 @@ export class RssFlowService{
   constructor(private http: HttpClient) { }
 
   getRssFeeds(): Observable<IRSSFeedModel>{
-    return this.http.get<IRSSFeedModel>(this.apiUrl + '/api/rssflow/get/rssfeed').pipe(catchError(this.handleError));
+    return this.http.get<IRSSFeedModel>(this.apiUrl + '/api/rssflow/rssfeed').pipe(catchError(this.handleError));
   }
 
   getNTRssFeeds(): Observable<IRSSFeedModel>{
-    return this.http.get<IRSSFeedModel>(this.apiUrl + '/api/rssflow/get/ntrssfeed').pipe(catchError(this.handleError));
+    return this.http.get<IRSSFeedModel>(this.apiUrl + '/api/rssflow/ntrssfeed').pipe(catchError(this.handleError));
   }
 
   getExpressenRssFeeds(): Observable<IRSSFeedModel>{
-    return this.http.get<IRSSFeedModel>(this.apiUrl + '/api/rssflow/get/expressenrssfeed').pipe(catchError(this.handleError));
+    return this.http.get<IRSSFeedModel>(this.apiUrl + '/api/rssflow/expressenrssfeed').pipe(catchError(this.handleError));
   }
 
   getSvdRssFeeds(): Observable<IRSSFeedModel>{
-    return this.http.get<IRSSFeedModel>(this.apiUrl + '/api/rssflow/get/svdrssfeed').pipe(catchError(this.handleError));
+    return this.http.get<IRSSFeedModel>(this.apiUrl + '/api/rssflow/svdrssfeed').pipe(catchError(this.handleError));
   }
 
   private handleError(error: HttpErrorResponse){

@@ -8,4 +8,5 @@ export interface IRSSFeedItemModel {
   ManagingEditor: string;
   Author: string;
   Category: string;
+  Source: string;
 }

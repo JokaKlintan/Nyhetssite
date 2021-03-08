@@ -7,12 +7,9 @@ import { IRSSFeedItemModel } from '../../models/IRSSFeedItemModel.interface';
 })
 export class RssFeedDataListComponent implements OnInit {
   @Input() model: IRSSFeedItemModel[];
-
-  @Input() source: string;
   
   constructor(){
     this.model = [];
-    this.source = '';
   }
 
   ngOnInit(): void {}
